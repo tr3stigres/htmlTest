@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+	<head>
+      <meta charset="utf-8">
+		<title>Form de Bootstrap</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+
+	</head>
+	<body>
+	<div class="container form-field">
+		<div class = "row mt-3">
+			<div class = "col-11">
+				<h1>Create new task</h1>
+			</div>
+			<div class = "col-1">
+				<button type="button" class="btn-close" disabled aria-label="Close"></button>
+			</div>
+		</row>
+		<hr class="text-primary">
+		<div class ="row">
+			<div class = "col-6">
+				<label for="titulo" class="form-label">Title</label>
+				<input id="titulo" name="titulo" class="form-control" type="text">
+			</div>
+			<div class = "col-6">
+				<label for="lugar" class="form-label">Location</label>
+				<select class="form-control" id="lugar">
+					<option value=""></option>
+					<option value="bcn">Barcelona</option>
+					<option value="lh">Hospitalet de Llobregat</option>
+				</select>
+			</div>
+		</div>
+		<div class ="row">
+			<div class = "col-4">
+				<label for="tipo" class="form-label">Type</label>
+				<select class="form-control" id="tipo">
+					<option value="i">Incident</option>
+					<option value="b">bla bla</option>
+				</select>
+			</div>
+			<div class = "col-4">
+				<label for="tipo" class="form-label">Criticity</label>
+				<select class="form-control" id="tipo">
+					<option value="min">Minor</option>
+					<option value="max">Maximo</option>
+				</select>
+			</div>
+			<div class = "col-4">
+				Enviroment
+				<div>
+					<input type="checkbox" id="checkprod" class="check theme-secondary" />
+			  		<label for="checkprod">Prod</label>
+				</div>
+				<div>
+					<input type="checkbox" id="checkpreprod" class="check theme-secondary" />
+			  		<label for="checkpreprod">Preprod</label>
+				</div>
+				<div>
+					<input type="checkbox" id="checkdemo" class="check theme-secondary" />
+			  		<label for="checkdemo">Demo</label>
+				</div>
+			</div>
+		</div>
+		<div class ="row">
+			<div class = "col-12">				
+				<label for="descripcion" class="form-label">Description</label>
+				<textarea class="form-control" id="descripcion" placeholder="" aria-label=""></textarea>
+			</div>
+		</div>
+		<div class ="row">
+			<div class = "col-6">
+				<label for="datepickerInicio" class="form-label">Start date</label>
+				<div class="form-control form-adorn w-12">
+		  			<div class="form-adorn-icon">
+	    					<svg class="bi" width="16" height="16"><use href="#calendar-week" /></svg>
+  					</div>
+    					<input type="text" class="form-ghost" id="datepickerInicio" data-bs-toggle="datepicker" autocomplete="off" placeholder="Choose date…">
+				</div>
+			</div>
+			<div class = "col-6">
+				<label class="form-label">Duration (in hours)</label>
+				<div class="input-group">
+    					<button class="btn btn-outline-secondary" type="button">-</button>
+    					<input type="text" class="form-control text-center" value="1.00">
+    					<button class="btn btn-outline-secondary" type="button">+</button>
+				</div>
+			</div>
+		</div>
+		<div class ="row">
+			<div class = "col-6">
+				<label for="estado" class="form-label">Status</label>
+				<select class="form-control" id="estado">
+					<option value="pl">Planned</option>
+					<option value="pndt">Pendiente</option>
+					<option value="ent">Entregado</option>
+				</select>
+
+			</div>
+			<div class = "col-6">
+				<label for="pct" class="form-label">Percent complete</label>
+				<select class="form-control" id="pct">
+					<option value="0">0%</option>
+					<option value="25">25%</option>
+					<option value="50">50%</option>
+					<option value="75">75%</option>
+					<option value="100">Completado</option>
+				</select>
+			</div>
+		</div>
+		<div class ="row mt-5">
+			<div class = "col-12">
+				<div class="form-field">
+					<input type="checkbox" id="checkprod" class="check theme-secondary" />
+			  		<label for="checkmail">Check here if you want to send an email</label>
+				</div>
+			</div>
+
+		</div>
+		<hr class="text-primary mt-9">
+		<div class ="row">
+			<div class = "col-12 text-end">
+				<button type="button" class="btn-solid theme-secondary">
+					Cancel
+				</button>				
+
+				<button type="button" class="btn-solid theme-primary">
+					Submit
+				</button>
+			</div>
+
+		</div>
+
+	</div>
+	
+	
+
+
+
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>	
+	</body>
+</html>

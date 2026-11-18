@@ -23,7 +23,7 @@ function seleccionarPalabra() {
 			juego[i][0]=e.id;  // elemento donde se muestra
 			juego[i][1]=palabraSeleccionada.substring(i, i+1);  //letra asignada a ese elemento
 			juego[i][2]=false; //Si el elemento está acertado o no
-			document.querySelector('#' + e.id).style.borderColor = "#000000";
+			e.style.borderColor = "#000000";
 			i+=1;
 		}		
 		e.innerHTML = '';

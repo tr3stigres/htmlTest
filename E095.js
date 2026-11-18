@@ -8,4 +8,4 @@ for(let i= 0; i<1000; i++){
 	}
 }
 
-document.querySelector("#descripcion").value = textNumeros.slice(0, -2) + '\n\nQue sumados dan: ' + suma;
+document.querySelector("#descripcion").innerHTML = textNumeros.slice(0, -2) + '<br /><br />Que sumados dan: ' + suma;

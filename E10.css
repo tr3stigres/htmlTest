@@ -1,0 +1,10 @@
+.letra {
+    border-bottom: 1px solid #FFFFFF;
+    width: 25px;
+    height: 25px;
+}
+
+.imagen {
+	max-width: 225px;
+	height: auto;	
+}
